@@ -28,7 +28,6 @@ function App() {
         requestOptions
       );
       const data = await result.json();
-
       console.log(">> data : " + data.response);
 
       setResponse([
