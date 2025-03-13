@@ -22,9 +22,9 @@ function App() {
     };
 
     try {
-      // const result = await fetch("http://localhost:4000/ask", requestOptions) ;
+      //const result = await fetch("http://localhost:4000/ask", requestOptions);
       const result = await fetch(
-        "http://15.164.221.216:4000/ask",
+        "https://chatgpt-express-five.vercel.app/ask",
         requestOptions
       );
       const data = await result.json();
