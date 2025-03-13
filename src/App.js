@@ -11,7 +11,7 @@ function App() {
 
   const handleButtonClick = async () => {
     // OpenAI API 요청 코드
-
+    console.log("handleButtonClick ... ");
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -22,11 +22,8 @@ function App() {
     };
 
     try {
-      //const result = await fetch("http://localhost:4000/ask", requestOptions);
-      const result = await fetch(
-        "https://chatgpt-express-five.vercel.app/ask",
-        requestOptions
-      );
+      const result = await fetch("http://localhost:4000/ask", requestOptions);
+
       const data = await result.json();
       console.log(">> data : " + data.response);
 
